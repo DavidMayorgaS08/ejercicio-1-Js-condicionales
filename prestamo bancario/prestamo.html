@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestamo Bancario</title>
+</head>
+<body>
+    <script>
+        let su_salario, deuda;
+
+        su_salario = prompt("De cuanto es su salario?");
+        deuda = prompt("Tiene alguna deuda?(elija una opcion)\n 1- no\n 2- si");
+
+        if(su_salario > 945200)
+        {
+            if(deuda != 1)
+            {
+                alert("no se puede realizar el prestamo ya que tiene deudas");
+            }
+            else
+            {
+                alert("se puede realizar el prestamo ya que cumple con todos los requisitos");
+            }
+        }
+        else
+        {
+            alert("no se puede realizar el prestamo ya que no cumple con el requisito del salario que debe ser mayor o igual a $945200");
+        }
+    </script>
+</body>
+</html>
